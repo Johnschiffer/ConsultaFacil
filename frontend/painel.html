@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsultaFácil - Painel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ConsultaFácil</h1>
+        <p>Agendamento de Consultas Online</p>
+
+        <div class="usuario-badge">
+            <span id="nome-usuario">Olá, paciente</span>
+            <button type="button" id="btn-logout" class="btn-sair">Sair</button>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <nav class="menu-abas">
+            <button type="button" class="btn-aba active" data-aba="aba-agendar">Novo Agendamento</button>
+            <button type="button" class="btn-aba" data-aba="aba-consultas">Minhas Consultas</button>
+        </nav>
+
+        <section id="aba-agendar" class="card aba-conteudo">
+
+            <h2>Agendar Consulta</h2>
+            <p>Preencha os dados abaixo para marcar sua consulta.</p>
+
+            <form id="form-agendamento">
+
+                <div class="form-group">
+                    <label for="especialidade">Especialidade</label>
+
+                    <select id="especialidade" name="especialidade" required>
+                        <option value="">Selecione...</option>
+                        <option value="Clínica Geral">Clínica Geral</option>
+                        <option value="Cardiologia">Cardiologia</option>
+                        <option value="Dermatologia">Dermatologia</option>
+                        <option value="Pediatria">Pediatria</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="medico">Médico</label>
+
+                    <select id="medico" name="medico" required disabled>
+                        <option value="">Selecione a especialidade primeiro</option>
+                    </select>
+                </div>
+
+                <div class="form-group-inline">
+
+                    <div class="form-group">
+                        <label for="data">Data</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="horario">Horário</label>
+
+                        <select id="horario" name="horario" required>
+                            <option value="">Selecione...</option>
+                            <option value="08:00">08:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="16:00">16:00</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="btn-primary">Confirmar Agendamento</button>
+
+            </form>
+
+        </section>
+
+        <section id="aba-consultas" class="card aba-conteudo" hidden>
+
+            <h2>Minhas Consultas</h2>
+            <p>Consultas que você possui agendadas.</p>
+
+            <div id="lista-consultas">
+                <p>Nenhuma consulta agendada.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>ConsultaFácil - Projeto Integrador</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

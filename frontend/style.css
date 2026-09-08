@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.logo p {
+    margin-top: 5px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.card h2 {
+    color: #008080;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group-inline {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group-inline .form-group {
+    width: 50%;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #006666;
+}
+
+.menu-abas {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-aba {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-aba.active {
+    background-color: #008080;
+    color: white;
+}
+
+.usuario-badge {
+    margin-top: 15px;
+}
+
+.btn-sair {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.resumo-agendamento {
+    background-color: #e8f5f5;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.item-consulta {
+    background-color: #e8f5f5;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #008080;
+}
+
+.btn-cancelar {
+    margin-top: 10px;
+    padding: 7px 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: white;
+}
+
+@media (max-width: 600px) {
+
+    .form-group-inline {
+        display: block;
+    }
+
+    .form-group-inline .form-group {
+        width: 100%;
+    }
+
+    .menu-abas {
+        display: block;
+    }
+
+    .btn-aba {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}

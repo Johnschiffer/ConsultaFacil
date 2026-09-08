@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsultaFácil - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ConsultaFácil</h1>
+        <p>Agendamento de Consultas Online</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>Acessar o Sistema</h2>
+            <p>Informe seus dados para entrar ou se cadastrar.</p>
+
+            <form id="form-auth">
+
+                <div class="form-group">
+                    <label for="auth-nome">Nome completo</label>
+                    <input type="text" id="auth-nome" name="nome" placeholder="Ex: Ana Carla Mendes" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="auth-email">E-mail</label>
+                    <input type="email" id="auth-email" name="email" placeholder="ana@email.com" required>
+                </div>
+
+                <button type="submit" class="btn-primary">Entrar / Cadastrar</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>ConsultaFácil - Projeto Integrador</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
